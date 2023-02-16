@@ -31,4 +31,7 @@ WHEN: i create an acount
 THEN: i can go back and choose sign in
 WHEN: i click sign in
 THEN: i am presented with a box to put in credentials
-WHEN: i put in
+WHEN: i put in credtionals
+THEN: i will be logged in
+WHEN: i log in
+THEN: i will be presented with a blog style page
