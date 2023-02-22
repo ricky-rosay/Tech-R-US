@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 import Particles from "react-tsparticles";
 import { loadLinksPreset } from "tsparticles-preset-links";
@@ -9,24 +9,16 @@ function particlesInit(tsParticles) {
   loadLinksPreset(tsParticles);
 }
 
-export default function Landing() {
+const Landing = () => {
   return (
     <div>
-      <div >
+      <div>
         <div>
-          <h1 className="h1">Finally</h1>
-
+          <h1 className="hi">Finally</h1>
         </div>
-
-        <Particles
-          options={{
-            preset: "links",
-          }}
-          init={particlesInit}
-        />
       </div>
-
     </div>
   );
-}
+};
 
+export default Landing;
