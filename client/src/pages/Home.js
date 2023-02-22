@@ -1,8 +1,8 @@
-import React from 'react';
-import { useQuery } from '@apollo/client';
-import PostList from '../components/PostList';
-import PostForm from '../components/PostForm';
-import { QUERY_POSTS } from '../utils/queries';
+import React from "react";
+import { useQuery } from "@apollo/client";
+import PostList from "../components/PostList";
+import PostForm from "../components/PostForm";
+import { QUERY_POSTS } from "../utils/queries";
 
 // import Particles from "react-tsparticles";
 // import { loadLinksPreset } from "tsparticles-preset-links";
@@ -13,17 +13,16 @@ import { QUERY_POSTS } from '../utils/queries';
 //   loadLinksPreset(tsParticles);
 // }
 
-
 const Home = () => {
   const { loading, data } = useQuery(QUERY_POSTS);
   const posts = data?.posts || [];
 
   return (
     <main>
-      <div className= "flex-row justify-center container">
+      <div className="flex-row justify-center container">
         <div
           className="col-12 col-md-10 mb-3 p-3 container"
-          style={{ border: '1px dotted #1a1a1a' }}
+          style={{ border: "1px dotted #1a1a1a" }}
         >
           <PostForm />
         </div>
@@ -31,30 +30,11 @@ const Home = () => {
           {loading ? (
             <div>Loading...</div>
           ) : (
-            <PostList
-              posts={posts}
-              title="Some Feed for Post(s)..."
-            />
+            <PostList posts={posts} title="Some Feed for Post(s)..." />
           )}
         </div>
-{/* <Particles
-          options={{
-            preset: "links",
-          }}
-          init={particlesInit}
-        /> */}
-        
-
-
-
-</div>
-
-
-
-
+      </div>
     </main>
-
-
   );
 };
 

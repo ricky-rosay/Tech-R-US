@@ -1,14 +1,14 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { useMutation } from '@apollo/client';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import { useMutation } from "@apollo/client";
 
-import { ADD_POST } from '../../utils/mutations';
-import { QUERY_POSTS } from '../../utils/queries';
+import { ADD_POST } from "../../utils/mutations";
+import { QUERY_POSTS } from "../../utils/queries";
 
-import Auth from '../../utils/auth';
+import Auth from "../../utils/auth";
 
 const PostForm = () => {
-  const [postText, setPostText] = useState('');
+  const [postText, setPostText] = useState("");
 
   const [characterCount, setCharacterCount] = useState(0);
 
@@ -38,7 +38,7 @@ const PostForm = () => {
         },
       });
 
-      setPostText('');
+      setPostText("");
     } catch (err) {
       console.error(err);
     }
@@ -47,7 +47,7 @@ const PostForm = () => {
   const handleChange = (event) => {
     const { name, value } = event.target;
 
-    if (name === 'postText' && value.length <= 280) {
+    if (name === "postText" && value.length <= 280) {
       setPostText(value);
       setCharacterCount(value.length);
     }
@@ -61,7 +61,7 @@ const PostForm = () => {
         <>
           <p
             className={`m-0 ${
-              characterCount === 280 || error ? 'text-danger' : ''
+              characterCount === 280 || error ? "text-danger" : ""
             }`}
           >
             Character Count: {characterCount}/280
@@ -76,7 +76,7 @@ const PostForm = () => {
                 placeholder="Make a post..."
                 value={postText}
                 className="form-input w-100"
-                style={{ lineHeight: '1.5', resize: 'vertical' }}
+                style={{ lineHeight: "1.5", resize: "vertical" }}
                 onChange={handleChange}
               ></textarea>
             </div>
@@ -95,7 +95,7 @@ const PostForm = () => {
         </>
       ) : (
         <p>
-          You need to be logged in to post. Please{' '}
+          You need to be logged in to post. Please{" "}
           <Link to="/login">login</Link> or <Link to="/signup">signup.</Link>
         </p>
       )}
