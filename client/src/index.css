@@ -1,10 +1,30 @@
 .hi {
   font-size: 50px;
   margin-bottom: 30px;
-  background: linear-gradient(to bottom, #00c853, #b2ff59);
+  /* background: linear-gradient(to bottom, #00c853, #b2ff59); */
+  background: linear-gradient(to bottom, #ec0202, #f89603);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+}
+
+.c-0 {
+  color: rgb(167, 167, 167);
+  font-style: italic;
+}
+
+.c-1 {
+  color: rgb(167, 167, 167);
+  font-style: italic;
+}
+
+.c-2 {
+  color: rgb(104, 104, 104);
+  font-style: italic;
+}
+.c-3 {
+  color: rgb(167, 167, 167);
+  text-align: center;
 }
 
 html {
@@ -374,13 +394,14 @@ body {
 
 h1,
 h2,
-h3,
 h4,
 h5,
 h6 {
   font-family: "JetBrains Mono", monospace;
   margin: 0 0 0.5rem;
   line-height: 1.25;
+  background: linear-gradient(to bottom, #00c853, #b2ff59);
+  color: red;
 }
 
 h1 {
@@ -393,6 +414,7 @@ h2 {
 
 h3 {
   font-size: 1.75rem;
+  text-align: center;
 }
 
 h4 {
@@ -470,6 +492,7 @@ a:hover {
 /* Margin - all sides */
 .m-0 {
   margin: 0 !important;
+  color: white;
 }
 
 .m-1 {
