@@ -35,3 +35,5 @@ WHEN: i put in credtionals
 THEN: i will be logged in
 WHEN: i log in
 THEN: i will be presented with a blog style page
+
+heheh
