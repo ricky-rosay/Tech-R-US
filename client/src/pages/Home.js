@@ -4,15 +4,6 @@ import PostList from "../components/PostList";
 import PostForm from "../components/PostForm";
 import { QUERY_POSTS } from "../utils/queries";
 
-// import Particles from "react-tsparticles";
-// import { loadLinksPreset } from "tsparticles-preset-links";
-
-// function particlesInit(tsParticles) {
-//   console.log("init", tsParticles);
-
-//   loadLinksPreset(tsParticles);
-// }
-
 const Home = () => {
   const { loading, data } = useQuery(QUERY_POSTS);
   const posts = data?.posts || [];
@@ -26,11 +17,11 @@ const Home = () => {
         >
           <PostForm />
         </div>
-        <div className="col-12 col-md-8 mb-3 container">
+        <div className="col-12 col-md-8 mb-3 container c-3">
           {loading ? (
             <div>Loading...</div>
           ) : (
-            <PostList posts={posts} title="Some Feed for Post(s)..." />
+            <PostList posts={posts} title="Most Recent Posts" />
           )}
         </div>
       </div>

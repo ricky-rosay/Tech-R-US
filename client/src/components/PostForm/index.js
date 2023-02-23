@@ -55,7 +55,7 @@ const PostForm = () => {
 
   return (
     <div>
-      <h3>Post your tech journey here...</h3>
+      <h3 className="c-2">Post your tech journey here...</h3>
 
       {Auth.loggedIn() ? (
         <>
@@ -94,7 +94,7 @@ const PostForm = () => {
           </form>
         </>
       ) : (
-        <p>
+        <p className="c-3">
           You need to be logged in to post. Please{" "}
           <Link to="/login">login</Link> or <Link to="/signup">signup.</Link>
         </p>
