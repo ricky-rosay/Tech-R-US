@@ -1,25 +1,22 @@
 # Tech-R-US
 
-tech social media app
+## Description
 
-blog style application
-the tech space
-tech r us
-mentors r us
-trey likes our idea
+Introducing Tech R US, the ultimate hub for all things tech-related! With our platform, developers from all over the world can connect, collaborate, and share their knowledge and experiences about the latest and greatest in the tech industry. Whether you're an aspiring developer just starting out, or a seasoned pro with years of experience under your belt, our app is the perfect place to showcase your skills, learn from others, and stay up-to-date with the latest tech trends. Join us today and be a part of the thriving tech community!
 
-authetication
+## User Story
 
-people from all around the world can come in and share their stories
-
-career paths
-goals and plans
-recomendations
-passions
+AS A person learning and wanting to break into tech
+I WANT to find a place with like-minded individuals
+SO THAT I can connect and read people's stories and updates
 
 ## Installation
 `npm install`
 `npm run develop`
+
+## Live Deploy Link
+
+https://sheltered-beach-62459.herokuapp.com/
 
 ## Demo
 ![home](https://user-images.githubusercontent.com/111669764/221068810-ddf0f778-d09e-4a4c-907c-ec51e4ecd2b0.png)
